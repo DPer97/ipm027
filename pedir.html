@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>iPub</title>
+    <link rel="stylesheet" type="text/css" href="src/css/stylesheet.css">
+</head>
+
+<body>
+    <script src="src/js/main.js"></script>
+    <div id="main" align=center>
+        <image src="src/css/leftmask.png" id="leftmask"></image>
+        <image src="src/css/rightmask.png" id="rightmask"></image>
+
+        <div id="header">
+            <h1>iPUB</h1>
+            <h1 class="hora">hora</h1>
+            <h1 class="data">data</h1>
+        </div>
+        <div id="content">
+            <div id="pedir">
+                <a href="#" onclick="confirmarPedido(this)" class="pedir-btn">
+                    <image src="img/caipirinha.svg" class="pedir-btn-img">
+                    </image>
+                    <h2 class="pedir-nome">Caipirinha</h2>
+                    <h2 class="pedir-preco">3.00</h2>
+                </a>
+                <a href="#" onclick="confirmarPedido(this)" class="pedir-btn">
+                    <image src="img/coca-cola.svg" class="pedir-btn-img">
+                    </image>
+                    <h2 class="pedir-nome">Coca-Cola</h2>
+                    <h2 class="pedir-preco">1.00</h2>
+                </a>
+                <a href="#" onclick="confirmarPedido(this)" class="pedir-btn">
+                    <image src="img/martini.svg" class="pedir-btn-img">
+                    </image>
+                    <h2 class="pedir-nome">Martini</h2>
+                    <h2 class="pedir-preco">3.00</h2>
+                </a>
+                <a href="#" onclick="confirmarPedido(this)" class="pedir-btn">
+                    <image src="img/tosta-queijo.svg" class="pedir-btn-img">
+                    </image>
+                    <h2 class="pedir-nome">Tosta (Queijo)</h2>
+                    <h2 class="pedir-preco">2.00</h2>
+                </a>
+                <a href="#" onclick="confirmarPedido(this)" class="pedir-btn">
+                    <image src="img/tosta-mista.svg" class="pedir-btn-img">
+                    </image>
+                    <h2 class="pedir-nome">Tosta (Mista)</h2>
+                    <h2 class="pedir-preco">2.50</h2>
+                </a>
+            </div>
+        </div>
+        <div id="pedir-overlay" class=hidden>
+            <h2>Confirmar pedido:</h2>
+            <p id="pedir-overlay-nome">Caipirinha</p>
+            <p id="pedir-overlay-preco">3.00</p>
+            <div id="quantidade-div">
+                <p></p>
+                <div id="quantidade-txt">Quantidade:</div>
+                <input id="quantidade-val" type="number" name="Quantidade" min="1" max="5" value=1>
+            </div>
+            <a href="#" onclick="pedir(this);" class="btn-confirmar">
+                <image src="img/tick.svg" class="btn-img-confirmar">
+                </image>
+            </a>
+            <a href="#" onclick="document.getElementById('pedir-overlay').classList.add('hidden')" class="btn-recusar">
+                <image src="img/cross.svg" class="btn-img-recusar">
+                </image>
+            </a>
+        </div>
+        <div id="pedir-overlay-confirmado" class=hidden>
+            <h1>Pedido Realizado!</h1>
+            <a href="#" onclick="document.getElementById('pedir-overlay-confirmado').classList.add('hidden')" class="btn-recusar">
+                <image src="img/tick.svg" class="btn-img-recusar">
+                </image>
+            </a>
+        </div>
+        <a href="#" id="help" onclick="document.getElementById('ajuda-overlay').classList.remove('hidden');">
+            <image src="img/waiter.svg" class="btn-img">
+            </image>
+        </a>
+        <div id="ajuda-overlay" class=hidden>
+            <h1>Deseja chamar um Empregado?</h1>
+            <a href="#" onclick="document.getElementById('ajuda-overlay').classList.add('hidden');document.getElementById('ajuda-overlay-confirmado').classList.remove('hidden')" class="btn-confirmar">
+                <image src="img/tick.svg" class="btn-img-confirmar">
+                </image>
+            </a>
+            <a href="#" onclick="document.getElementById('ajuda-overlay').classList.add('hidden')" class="btn-recusar">
+                <image src="img/cross.svg" class="btn-img-recusar">
+                </image>
+            </a>
+        </div>
+        <div id="ajuda-overlay-confirmado" class=hidden>
+            <h1>Empregado chamado! Por favor aguarde.</h1>
+            <a href="#" onclick="document.getElementById('ajuda-overlay-confirmado').classList.add('hidden')" class="btn-recusar">
+                <image src="img/tick.svg" class="btn-img-recusar">
+                </image>
+            </a>
+        </div>
+        <a href="index.html" id="back">
+            <image src="img/back.svg" class="btn-img">
+            </image>
+        </a>
+    </div>
+</body>
+
+</html>

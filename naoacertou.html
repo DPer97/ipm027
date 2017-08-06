@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>iPub</title>
+    <link rel="stylesheet" type="text/css" href="src/css/stylesheet.css">
+</head>
+
+<body>
+    <script src="src/js/main.js"></script>
+    <div id="main" align=center>
+        <image src="src/css/leftmask.png" id="leftmask"></image>
+        <image src="src/css/rightmask.png" id="rightmask"></image>
+
+        <div id="header">
+            <h1>iPUB</h1>
+            <h1 class="hora">hora</h1>
+            <h1 class="data">data</h1>
+        </div>
+        <div id="content">
+            <h1>Ooops! Não acertou! Tente no próximo quiz!</h1>
+        </div>
+        <a href="#" id="help" onclick="document.getElementById('ajuda-overlay').classList.remove('hidden');">
+            <image src="img/waiter.svg" class="btn-img">
+            </image>
+        </a>
+        <div id="ajuda-overlay" class=hidden>
+            <h1>Deseja chamar um Empregado?</h1>
+            <a href="#" onclick="document.getElementById('ajuda-overlay').classList.add('hidden');document.getElementById('ajuda-overlay-confirmado').classList.remove('hidden')" class="btn-confirmar">
+                <image src="img/tick.svg" class="btn-img-confirmar">
+                </image>
+            </a>
+            <a href="#" onclick="document.getElementById('ajuda-overlay').classList.add('hidden')" class="btn-recusar">
+                <image src="img/cross.svg" class="btn-img-recusar">
+                </image>
+            </a>
+        </div>
+        <div id="ajuda-overlay-confirmado" class=hidden>
+            <h1>Empregado chamado! Por favor aguarde.</h1>
+            <a href="#" onclick="document.getElementById('ajuda-overlay-confirmado').classList.add('hidden')" class="btn-recusar">
+                <image src="img/tick.svg" class="btn-img-recusar">
+                </image>
+            </a>
+        </div>
+        <a href="index.html" id="back">
+            <image src="img/back.svg" class="btn-img">
+            </image>
+        </a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 115">
+  <defs>
+    <style>
+      .a, .b, .c, .k, .l {
+        fill: none;
+      }
+
+      .a, .l {
+        stroke: #bca796;
+        stroke-width: 6px;
+      }
+
+      .a, .k, .l {
+        stroke-miterlimit: 10;
+      }
+
+      .a, .c {
+        clip-rule: evenodd;
+      }
+
+      .d {
+        fill: #af6c2d;
+      }
+
+      .e, .s {
+        fill: #e2d2c4;
+      }
+
+      .e {
+        opacity: 0.2;
+      }
+
+      .f {
+        clip-path: url(#a);
+      }
+
+      .g {
+        clip-path: url(#b);
+      }
+
+      .h {
+        isolation: isolate;
+      }
+
+      .i {
+        clip-path: url(#c);
+      }
+
+      .j {
+        clip-path: url(#d);
+      }
+
+      .k {
+        stroke: #fff;
+        stroke-width: 10px;
+      }
+
+      .l {
+        fill-rule: evenodd;
+      }
+
+      .m {
+        fill: #e13d96;
+      }
+
+      .n {
+        clip-path: url(#f);
+      }
+
+      .o {
+        clip-path: url(#g);
+      }
+
+      .p {
+        clip-path: url(#h);
+      }
+
+      .q {
+        clip-path: url(#i);
+      }
+
+      .r {
+        clip-path: url(#j);
+      }
+    </style>
+    <clipPath id="a">
+      <path class="a" d="M224.42,38.12l-4.51,69.35a5.16,5.16,0,0,1-5.08,4.76H185.92a5.22,5.22,0,0,1-5.13-4.76l-5.16-69.14Z"/>
+    </clipPath>
+    <clipPath id="b">
+      <rect class="b" x="-627.97" y="-229.71" width="1374.42" height="977.36"/>
+    </clipPath>
+    <clipPath id="c">
+      <rect class="b" x="175.26" y="38.1" width="49.63" height="74.45"/>
+    </clipPath>
+    <clipPath id="d">
+      <path class="c" d="M224.42,38.12l-4.51,69.35a5.16,5.16,0,0,1-5.08,4.76H185.92a5.22,5.22,0,0,1-5.13-4.76l-5.16-69.14ZM161.31,23.8h77.43V126.55H161.31V23.8Z"/>
+    </clipPath>
+    <clipPath id="f">
+      <path class="c" d="M-1720.56,113V40.83h65.49V114.9h-63.53a2,2,0,0,1-2-1.95"/>
+    </clipPath>
+    <clipPath id="g">
+      <path class="c" d="M-1643.29,9.29v7.87h-65.49V9.29a7.88,7.88,0,0,1,7.86-7.91h49.77a7.88,7.88,0,0,1,7.86,7.91"/>
+    </clipPath>
+    <clipPath id="h">
+      <polygon class="c" points="-1640.71 21.92 -1647.96 34.06 -1633.46 26.78 -1640.71 21.92"/>
+    </clipPath>
+    <clipPath id="i">
+      <polygon class="c" points="-1709.63 21.1 -1644.8 21.1 -1654.21 36.88 -1719.05 36.88 -1709.63 21.1"/>
+    </clipPath>
+    <clipPath id="j">
+      <path class="c" d="M-1631.52,103.05a3.52,3.52,0,0,1-1.74,2.87l-17.88,9V40.07l19.62-9.86v72.84Z"/>
+    </clipPath>
+  </defs>
+  <title>icons-ordertips</title>
+  <path class="d" d="M177.56,69.73s2-9,10.54-9,11.82,5.94,15.57,7.7c6.58,3.1,12.25,1.69,19-4.4s-5.07,47.37-5.07,47.37l-35.93-.61Z"/>
+  <polygon class="e" points="177.63 38.33 226.42 38.12 221.35 109.44 216.83 112.23 185.19 111.42 181.06 106.32 177.63 38.33"/>
+  <g>
+    <g class="f">
+      <g class="g">
+        <g class="h">
+          <g class="i">
+            <g class="j">
+              <g class="i">
+                <path class="k" d="M224.42,38.12l-4.51,69.35a5.16,5.16,0,0,1-5.08,4.76H185.92a5.22,5.22,0,0,1-5.13-4.76l-5.16-69.14Z"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path class="l" d="M224.42,38.12l-4.51,69.35a5.16,5.16,0,0,1-5.08,4.76H185.92a5.22,5.22,0,0,1-5.13-4.76l-5.16-69.14Z"/>
+  </g>
+  <path class="m" d="M201.15,31.55a10.28,10.28,0,0,0,10.28-10.28C211.43,15.6,202.18,4,201.15,3c0,0-10.28,12.6-10.28,18.27A10.28,10.28,0,0,0,201.15,31.55Z"/>
+  <rect class="s" x="186.22" y="61.39" width="12" height="12" rx="2.61" ry="2.61" transform="translate(-8.09 104.35) rotate(-29.77)"/>
+  <rect class="s" x="201.22" y="74.39" width="12" height="12" rx="2.61" ry="2.61" transform="translate(-12.56 113.51) rotate(-29.77)"/>
+  <rect class="s" x="190.22" y="90.39" width="12" height="12" rx="2.61" ry="2.61" transform="translate(-21.96 110.16) rotate(-29.77)"/>
+</svg>

@@ -1,0 +1,465 @@
+* {
+    color: #ccc;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    height: 198px;
+    width: 198px;
+    border-radius: 50%;
+    background-color: #222;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+    margin: 10px;
+}
+
+.btn-img {
+    height: 100px;
+    width: 100px;
+    padding-top: 20px;
+}
+
+#back {
+    position: absolute;
+    bottom: 0;
+    left: calc(10% - 50px)
+}
+
+#help {
+    position: absolute;
+    bottom: 10px;
+    right: calc(10% - 50px);
+}
+
+#leftmask {
+    float: left;
+    shape-outside: url('leftmask.png');
+    padding: 0px;
+    pointer-events: none;
+}
+
+#rightmask {
+    float: right;
+    shape-outside: url('rightmask.png');
+    padding: 0px;
+    pointer-events: none;
+}
+
+#header {
+    background-color: #222;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+    padding: 10px;
+}
+
+#main {
+    max-height: 1000px;
+    max-width: 1500px;
+    min-height: 1000px;
+    min-width: 1500px;
+    background-color: #444;
+    margin: 0 auto;
+    align-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#content {
+    padding-top: 10px;
+}
+
+body {
+    background-color: #777;
+    padding: 10px;
+}
+
+#quiz {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#quiz a {
+    background-color: #222;
+    border-radius: 100%;
+    font-size: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+    height: 200px;
+    width: 200px;
+    line-height: 200px;
+}
+
+#chat {
+    height: 500px;
+    width: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.chat-choice {
+    background-color: #222;
+    display: block;
+    font-size: 75px;
+    width: calc(99% - 2px);
+    border: solid 1px #333;
+    border-bottom: 0;
+}
+
+.chat-choice:hover {
+    background-color: #222
+}
+
+.chat-choice:active {
+    background-color: #222;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.chat-message * {
+    display: inline;
+    height: 100%;
+}
+
+.chat-message:nth-of-type(even) {
+    background-color: #222;
+}
+
+.chat-message:nth-of-type(odd) {
+    background-color: #333;
+}
+
+.chat-message {
+    display: block;
+    font-size: 20px;
+    width: calc(99% - 2px);
+    border: solid 1px #333;
+    text-align: left;
+}
+
+.chat-message-author {
+    background-color: #444;
+    border-right: solid 1px #444;
+    border-bottom: solid 1px #444;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#chat-escrever {
+    width: 300px;
+    color: #000;
+}
+
+#chat-submeter {
+    color: #000;
+}
+
+.pedir-btn {
+    display: inline-block;
+    height: 198px;
+    width: 198px;
+    border-radius: 50%;
+    background-color: #222;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+    margin: 10px;
+}
+
+.pedir-btn-img {
+    height: 100px;
+    width: 100px;
+    padding-top: 20px;
+}
+
+.pedir-preco:after {
+    content: "€";
+}
+
+#pedir-overlay {
+    height: 300px;
+    width: 300px;
+    background-color: #333;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 300px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .5);
+    padding: 50px;
+}
+
+#pedir-overlay h2 {
+    margin: 20px;
+}
+
+#pedir-overlay-nome {
+    float: left;
+}
+
+#pedir-overlay-preco {
+    float: right;
+}
+
+#pedir-overlay-preco:after {
+    content: "€";
+}
+
+.btn-confirmar {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #222;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+    margin: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.btn-img-confirmar {
+    height: 50px;
+    width: 50px;
+    padding-top: 20px;
+}
+
+.btn-recusar {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #222;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+    margin: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-img-recusar {
+    height: 50px;
+    width: 50px;
+    padding-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#pedir-overlay-confirmado {
+    height: 300px;
+    width: 300px;
+    background-color: #333;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 300px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .5);
+    padding: 50px;
+}
+
+.btn:hover {
+    background-color: #111;
+}
+
+.btn:active {
+    background-color: #333;
+}
+
+.pedir-btn:hover {
+    background-color: #111;
+}
+
+.pedir-btn:active {
+    background-color: #333;
+}
+
+#feed {
+    display: inline-block;
+    height: 75px;
+    width: 1050px;
+    background: #666;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 75px;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: right;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .5);
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 525px);
+}
+
+.pedidos-container {
+    margin-top: 30px;
+    height: 200px;
+    width: 420px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: solid 1px #000;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .5);
+}
+
+.pedido {
+    width: 400px;
+    display: block;
+    font-size: 20px;
+    border: solid 1px #333;
+    text-align: left;
+    overflow: hidden;
+}
+
+.pedido * {
+    background-color: #444;
+    border-right: solid 1px #444;
+    border-bottom: solid 1px #444;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pedido .pedido-nome {
+    float: left;
+}
+
+.pedido .pedido-preco {
+    float: right;
+}
+
+.pedido .pedido-preco:after {
+    content: "€";
+}
+
+.pedido-total * {
+    display: block;
+    font-size: 30px
+}
+
+.pedido-total .pedido-preco-final:after {
+    content: "€";
+}
+
+#chat-choice-container {
+    width: 500px;
+    height: 500px;
+    background: #666;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .5);
+    position: absolute;
+    bottom: 200px;
+    left: calc(50% - 250px)
+}
+
+.mesa {
+    position: absolute;
+    font-size: 50px;
+    line-height: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #766;
+    border-radius: 100px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .5);
+}
+
+#mesa-1 {
+    left: 50px;
+    top: 50px;
+}
+
+#mesa-2 {
+    left: 100px;
+    top: 150px;
+}
+
+#mesa-3 {
+    left: 50px;
+    top: 250px;
+}
+
+#mesa-4 {
+    left: 100px;
+    top: 350px;
+}
+
+#mesa-5 {
+    right: 50px;
+    bottom: 100px;
+}
+
+#mesa-6 {
+    right: 100px;
+    bottom: 200px;
+}
+
+#mesa-7 {
+    right: 50px;
+    bottom: 300px;
+}
+
+#mesa-8 {
+    right: 100px;
+    bottom: 400px;
+}
+
+#mesa-global {
+    left: calc(50% - 100px);
+    bottom: -60px;
+    width: 200px;
+}
+
+#quantidade-div {
+    margin-top: 100px;
+    clear: left;
+}
+
+#quantidade-txt {
+    float: left;
+}
+
+#quantidade-val {
+    float: right;
+    color: #000;
+}
+
+#ajuda-overlay-confirmado {
+    height: 300px;
+    width: 300px;
+    background-color: #333;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 300px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .5);
+    padding: 50px;
+}
+
+#ajuda-overlay {
+    height: 300px;
+    width: 300px;
+    background-color: #333;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 300px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .5);
+    padding: 50px;
+}
+
+.feed-img {
+    height: 50px;
+    display: block;
+    width: 50px;
+    float: left;
+    line-height: 50px;
+    margin-top: 10px;
+}
+
+marquee {
+    width: 1000px;
+}
+
+.btn-home {
+    height: 100px;
+    width: 100px;
+    padding-top: 20px;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 50px);
+}
